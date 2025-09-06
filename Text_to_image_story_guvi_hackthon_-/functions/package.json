@@ -1,0 +1,25 @@
+{
+  "name": "storygen-functions",
+  "version": "0.1.0",
+  "engines": { "node": "20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "serve": "firebase emulators:start",
+    "lint": "echo \"no lint configured\"",
+    "start": "npm run build && firebase emulators:start"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.5.0",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.58.1",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "typescript": "^5.5.4"
+  }
+}
